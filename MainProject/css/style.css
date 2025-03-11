@@ -4,14 +4,45 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
     text-align: center;
+    margin: 20px;
+    border: 5px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
 }
 
 .Title{
     text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red,0 0 40px red;
-    font-size: 3rem;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    border-radius: 15px; 
+    font-size: 4rem;
+    align-content: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border: 5px solid #333; 
 }
 
 .Description{
+    align-content: center;
+    margin-right: 40px;
+    display: inline-block; 
+    padding: 10px; 
+    border: 5px solid #333; 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+}
 
+.motortitle{
+    align-content: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    display: inline-block; 
+    padding: 10px; 
+    border: 5px solid #333; 
+    border-radius: 15px; 
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
