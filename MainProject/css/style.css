@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.Title{
+    text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red,0 0 40px red;
+    font-size: 3rem;
+}
+
+.Description{
+
+}
+
