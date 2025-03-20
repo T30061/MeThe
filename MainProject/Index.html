@@ -9,47 +9,162 @@
 <body>
     <p class="Title">Engines</p><br>
     <p class="Description">This is a Website which will go about Engines and what types / things it give reaching from Jet engines to normal Car / bike engines</p>
-    <div>
-        <div class="Ottomotor">
-            <h1 class="motortitle">Ottomotor</h1>
-        </div>
-
-        <div class="Dieselmotor">
-            <h1 class="motortitle">Dieselmotor</h1>
-        </div>
-
-        <div class="Wankelmotor">
-            <h1 class="motortitle">Wankelmotor</h1>
-        </div>
-
-        <div class="Elektromotor">
-            <h1 class="motortitle">Elektromotor</h1>
-        </div>
-
-        <div class="Hybridmotor">
-            <h1 class="motortitle">Hybridmotor</h1>
-        </div>
-
-        <div class="Plug-in-Hybrid">
-            <h1 class="motortitle">Plug-in-Hybrid</h1>
-        </div>
-
-        <div class="Gasturbine">
-            <h1 class="motortitle">Gasturbine</h1>
-        </div>
-
-        <div class="Stirlingmotor">
-            <h1 class="motortitle">Stirlingmotor</h1>
-        </div>
-
-        <div class="Rotationskolbenmotor">
-            <h1 class="motortitle">Rotationskolbenmotor</h1>
-        </div>
-
-        <div class="Wasserstoffmotor">
-            <h1 class="motortitle">Wasserstoffmotor</h1>
-        </div>
-    
+   
+    <div class="Engines">
+        <h3 class="motortitle" data-popup="wankel">Wankelmotor <img src="https://github.com/T30061/CLOUD/blob/main/Website/img/motoren/wankelmotor.png?raw=true" width="50" height="50"></h3>
+        <h3 class="motortitle" data-popup="otto">Ottomotor</h3>
+        <h3 class="motortitle" data-popup="diesel">Dieselmotor</h3>
+        <h3 class="motortitle" data-popup="elektro">Elektromotor</h3>
+        <h3 class="motortitle" data-popup="hybrid">Hybridmotor</h3>
+        <h3 class="motortitle" data-popup="plugin">Plug-in-Hybrid</h3>
+        <h3 class="motortitle" data-popup="gasturbine">Gasturbine</h3>
+        <h3 class="motortitle" data-popup="stirling">Stirlingmotor</h3>
+        <h3 class="motortitle" data-popup="rotationskolben">Rotationskolbenmotor</h3>
+        <h3 class="motortitle" data-popup="wasserstoff">Wasserstoffmotor</h3>
     </div>
+
+    <div class="overlay" id="wankel">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Wankelmotor</h2>
+            <p>Ein Kreiskolbenmotor ohne klassische Zylinder. Er arbeitet mit einer rotierenden Scheibe.</p>
+            <p><strong>Takt:</strong> 4-Takt-Prinzip</p>
+            <p><strong>Vorteile:</strong> Wenige bewegliche Teile, hohe Drehzahl</p>
+            <p><strong>Nachteile:</strong> Hoher Ölverbrauch, schlechter Wirkungsgrad</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="otto">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Ottomotor</h2>
+            <p>Ein klassischer Benzinmotor mit Fremdzündung durch Zündkerzen.</p>
+            <p><strong>Takt:</strong> 4-Takt oder 2-Takt</p>
+            <p><strong>Vorteile:</strong> Hohe Drehzahlen, kompakt</p>
+            <p><strong>Nachteile:</strong> Höherer Verbrauch als Diesel</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="diesel">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Dieselmotor</h2>
+            <p>Ein Selbstzünder, der Diesel verwendet und für hohe Effizienz bekannt ist.</p>
+            <p><strong>Takt:</strong> 4-Takt oder 2-Takt</p>
+            <p><strong>Vorteile:</strong> Effizienter als Benziner, langlebig</p>
+            <p><strong>Nachteile:</strong> Höhere Emissionen, schwerer</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="elektro">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Elektromotor</h2>
+            <p>Ein Antrieb, der elektrische Energie in mechanische Energie umwandelt.</p>
+            <p><strong>Takt:</strong> Kein Takt, da kein Verbrennungsprozess</p>
+            <p><strong>Vorteile:</strong> Umweltfreundlich, hoher Wirkungsgrad</p>
+            <p><strong>Nachteile:</strong> Batterien sind teuer</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="hybrid">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Hybridmotor</h2>
+            <p>Kombiniert Verbrennungs- und Elektromotor für höhere Effizienz.</p>
+            <p><strong>Takt:</strong> 4-Takt plus Elektro</p>
+            <p><strong>Vorteile:</strong> Niedriger Verbrauch</p>
+            <p><strong>Nachteile:</strong> Komplexe Technik</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="plugin">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Plug-in-Hybrid</h2>
+            <p>Kann über Stromnetz geladen werden und hat eine größere elektrische Reichweite.</p>
+            <p><strong>Takt:</strong> 4-Takt plus Elektro</p>
+            <p><strong>Vorteile:</strong> Umweltfreundlicher als normale Hybride</p>
+            <p><strong>Nachteile:</strong> Teurer als klassische Hybride</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="gasturbine">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Gasturbine</h2>
+            <p>Nutzen Verbrennungsgase zur Erzeugung von Drehbewegung, oft in Flugzeugen.</p>
+            <p><strong>Takt:</strong> Kontinuierlicher Verbrennungsprozess</p>
+            <p><strong>Vorteile:</strong> Hohe Leistung, leicht</p>
+            <p><strong>Nachteile:</strong> Hoher Treibstoffverbrauch</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="stirling">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Stirlingmotor</h2>
+            <p>Ein thermodynamischer Motor, der mit äußerer Wärmequelle arbeitet.</p>
+            <p><strong>Takt:</strong> Externe Verbrennung</p>
+            <p><strong>Vorteile:</strong> Leise, effizient</p>
+            <p><strong>Nachteile:</strong> Langsamer als Verbrennungsmotoren</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="rotationskolben">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Rotationskolbenmotor</h2>
+            <p>Ähnlich wie der Wankelmotor, aber mit anderen Rotationsmechanismen.</p>
+            <p><strong>Takt:</strong> Variabel</p>
+            <p><strong>Vorteile:</strong> Hohe Leistung</p>
+            <p><strong>Nachteile:</strong> Hoher Verschleiß</p>
+        </div>
+    </div>
+    
+    <div class="overlay" id="wasserstoff">
+        <div class="popup">
+            <button class="close-btn">✖</button>
+            <h2 class="innername">Wasserstoffmotor</h2>
+            <p>Verbrennt Wasserstoff statt Benzin und ist emissionsärmer.</p>
+            <p><strong>Takt:</strong> 4-Takt</p>
+            <p><strong>Vorteile:</strong> Emissionsfrei</p>
+            <p><strong>Nachteile:</strong> Wasserstoffspeicherung ist schwierig</p>
+        </div>
+    </div>
+    
+
+    <script>
+        const motorTitles = document.querySelectorAll('.motortitle');
+        const overlays = document.querySelectorAll('.overlay');
+
+        motorTitles.forEach(title => {
+            title.addEventListener('click', function() {
+                const popupId = this.getAttribute('data-popup');
+                const popup = document.getElementById(popupId);
+                
+                if (popup) {
+                    popup.classList.add('show');
+                    document.body.classList.add('modal-open'); 
+                }
+            });
+        });
+
+        overlays.forEach(overlay => {
+            const closeButton = overlay.querySelector('.close-btn');
+
+            closeButton.addEventListener('click', function() {
+                overlay.classList.remove('show');
+                document.body.classList.remove('modal-open'); 
+            });
+
+            overlay.addEventListener('click', function(event) {
+                if (event.target === overlay) {
+                    overlay.classList.remove('show');
+                    document.body.classList.remove('modal-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

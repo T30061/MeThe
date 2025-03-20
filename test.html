@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* Style for the overlay (dark background effect) */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark background */
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        /* Popup window */
+        .popup {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        /* Hide scrollbar when modal is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title that triggers the popup -->
+    <h3 class="motortitle">Wankelmotor</h3>
+
+    <!-- The overlay (background darkens) -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <button class="close-btn" onclick="closePopup()">✖</button>
+            <h2>Wankelmotor</h2>
+            <p>The Wankel engine is a type of internal combustion engine that uses a rotary design instead of pistons.</p>
+        </div>
+    </div>
+
+    <script>
+        const motortitle = document.querySelector('.motortitle');
+        const overlay = document.getElementById('popupOverlay');
+
+        motortitle.addEventListener('click', function() {
+            overlay.style.display = 'flex';
+            document.body.classList.add('modal-open'); 
+        });
+
+        function closePopup() {
+            overlay.style.display = 'none';
+            document.body.classList.remove('modal-open'); 
+        }
+
+        overlay.addEventListener('click', function(event) {
+            if (event.target === overlay) {
+                closePopup();
+            }
+        });
+    </script>
+
+</body>
+</html>
