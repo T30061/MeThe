@@ -95,7 +95,7 @@ th {
 .popup {
     background: black;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     text-align: center;
@@ -115,7 +115,6 @@ th {
     border: none;
     background: none;
     border-radius: 20px;
-    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
 }
 
 .overlay.show {
